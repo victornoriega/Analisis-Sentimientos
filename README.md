@@ -16,9 +16,9 @@ curl -X POST $ENDPOINT -d "{\"query\":\"aeropuerto texcoco lang:es\",\"fromDate\
 ```
 ## Archivos en el repositorio
 Actualmente, podrás encontrar distintos tipos de archivo en el repositorio. Estos son:
-*Extensión JSON: Son los archivos que nos proporciona Twitter API. No están etiquetados y no han pasado por un proceso de limpieza.
-*Extensión txt: Estos contienen Tweets después del proceso de limpieza. Todos están previamente clasificados, a excepción de uno (se llama sin_clasificar.txt).
-*Extensión py: Scripts hechos en Python 3.6.X, usando principalmente la librería SKLearn, para el entrenamiento de clasificadores, así como la extracción de características.
+* Extensión JSON: Son los archivos que nos proporciona Twitter API. No están etiquetados y no han pasado por un proceso de limpieza.
+* Extensión txt: Estos contienen Tweets después del proceso de limpieza. Todos están previamente clasificados, a excepción de uno (se llama sin_clasificar.txt).
+* Extensión py: Scripts hechos en Python 3.6.X, usando principalmente la librería SKLearn, para el entrenamiento de clasificadores, así como la extracción de características.
 
 ## Proceso y problemáticas
 El obtener Tweets previamente clasificados, donde las clases son distintas a positivo o negativo, dio lugar a que optáramos por tweets sin clasificar, ya que un Tweet puede ser positivo, pero negativo de acuerdo a nuestras clases. Con ello, es posible hacer una clasificación a partir de Aprendizaje No Supervisado, donde no necesitas tener datos previamente clasificados. Sin embargo, con el único propósito de experimentación, decidimos adentrarnos al Aprendizaje Semi-Supervisado, en donde sólo necesitas una porción de los datos de entrenamiento clasificados. Nosotros mismos fuimos quienes dimos la etiqueta a los datos que actualmente, encontrarás etiquetados en este repositorio.
@@ -28,7 +28,7 @@ Según la referencia, de 10,000 datos, cuando 9,000 son de entrenamiento y otros
 
 
 ## Integrantes:
-*[Víctor Noriega](https://github.com/victornoriega) 
-*[Nan Montaño](https://github.com/nanmon)
+* [Víctor Noriega](https://github.com/victornoriega) 
+* [Nan Montaño](https://github.com/nanmon)
 ## Bajo la tutela de:
-*[Olivia Gutú](https://github.com/oliviagutu)
+* [Olivia Gutú](https://github.com/oliviagutu)
